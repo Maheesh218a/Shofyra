@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="shofyra_prefs.xml"/>
+        <exclude domain="database" path="shofyra.db"/>
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="shofyra_prefs.xml"/>
+    </device-transfer>
+</data-extraction-rules>

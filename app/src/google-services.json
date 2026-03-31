@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178815155042",
+    "project_id": "eshopapp-b04f9",
+    "storage_bucket": "eshopapp-b04f9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178815155042:android:83627e59ebaf39a2de0a3b",
+        "android_client_info": {
+          "package_name": "com.shofyra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNmbEpsvJifPB3pqGpUyz6XMoQ_iZ4MC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178815155042:android:410d3292b7626200de0a3b",
+        "android_client_info": {
+          "package_name": "lk.jiat.eshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNmbEpsvJifPB3pqGpUyz6XMoQ_iZ4MC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

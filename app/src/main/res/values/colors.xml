@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===================== SHOFYRA BRAND COLORS (CREATIVE LIGHT) ===================== -->
+    <!-- Primary Brand: Modern Indigo -->
+    <color name="brand_primary">#6366F1</color>
+    <color name="brand_primary_variant">#4F46E5</color>
+    <color name="brand_primary_light">#E0E7FF</color>
+
+    <!-- Accent: Vibrant Coral -->
+    <color name="brand_accent">#F43F5E</color>
+    <color name="brand_accent_light">#FFE4E6</color>
+
+    <!-- ===================== LIGHT MODE SEMANTIC COLORS ===================== -->
+    <color name="colorPrimary">#6366F1</color>
+    <color name="colorPrimaryVariant">#4F46E5</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <color name="colorSecondary">#F43F5E</color>
+    <color name="colorSecondaryVariant">#E11D48</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+
+    <!-- Backgrounds -->
+    <color name="background">#F8FAFC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F1F5F9</color>
+
+    <!-- Text -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- UI Elements -->
+    <color name="divider">#E2E8F0</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_stroke">#E2E8F0</color>
+    <color name="shimmer_base">#E2E8F0</color>
+    <color name="shimmer_highlight">#F8FAFC</color>
+    <color name="badge_background">#F43F5E</color>
+    <color name="rating_star">#F59E0B</color>
+
+    <!-- Navigation Bar -->
+    <color name="nav_background">#FFFFFF</color>
+    <color name="nav_selected">#6366F1</color>
+    <color name="nav_unselected">#94A3B8</color>
+
+    <!-- Status Bar -->
+    <color name="status_bar">#FFFFFF</color>
+
+    <!-- Gradients -->
+    <color name="gradient_start">#6366F1</color>
+    <color name="gradient_end">#F43F5E</color>
+
+    <!-- Price / Discount -->
+    <color name="price_color">#6366F1</color>
+    <color name="original_price_color">#94A3B8</color>
+    <color name="discount_badge">#F43F5E</color>
+
+    <!-- Button -->
+    <color name="button_primary">#6366F1</color>
+    <color name="button_primary_pressed">#4F46E5</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <!-- Overlay -->
+    <color name="overlay_light">#33000000</color>
+    <color name="overlay_dark">#99000000</color>
+
+    <!-- Utility -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="error">#EF4444</color>
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+
+    <!-- ===================== ALIAS (used in drawable XMLs) ===================== -->
+    <color name="primary">@color/colorPrimary</color>
+    <color name="accent">@color/colorSecondary</color>
+</resources>

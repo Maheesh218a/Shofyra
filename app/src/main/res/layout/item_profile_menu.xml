@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+
+    <!-- Icon bg -->
+    <FrameLayout
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_category_icon">
+
+        <ImageView
+            android:id="@+id/iv_menu_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:contentDescription="Menu icon"
+            app:tint="@color/brand_primary"/>
+
+    </FrameLayout>
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/tv_menu_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"/>
+
+    <!-- Badge -->
+    <TextView
+        android:id="@+id/tv_menu_badge"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:background="@drawable/bg_cart_badge"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:visibility="gone"/>
+
+    <!-- Arrow -->
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Navigate"
+        android:src="@drawable/ic_arrow_right"
+        app:tint="@color/text_hint"/>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+﻿To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:packageDebugResources
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugResources
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:processDebugManifest
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:processDebugManifestForPackage
+> Task :app:processDebugResources
+
+> Task :app:compileDebugJavaWithJavac
+./gradlew : warning: C:\Users\User\.gradle\caches\8.
+13\transforms\46d39b8d54ac7236984e2139aebcba17\trans
+formed\dotsindicator-5.0-debug-api.jar(/com/tbuonomo
+/viewpagerdotsindicator/DotsIndicator.class): major 
+version 62 is newer than 61, the highest major 
+version supported by this compiler.
+At line:1 char:1
++ ./gradlew assembleDebug --no-daemon 2>&1 | 
+Out-File -FilePath build_o ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: 
+(warning:     C:\Use... this compiler.:String) [], 
+RemoteExcep    tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  It is recommended that the compiler be upgraded.
+warning: C:\Users\User\.gradle\caches\8.13\transform
+s\46d39b8d54ac7236984e2139aebcba17\transformed\dotsi
+ndicator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdo
+tsindicator/DotsIndicator.class): major version 62 
+is newer than 61, the highest major version 
+supported by this compiler.
+  It is recommended that the compiler be upgraded.
+warning: C:\Users\User\.gradle\caches\8.13\transform
+s\46d39b8d54ac7236984e2139aebcba17\transformed\dotsi
+ndicator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdo
+tsindicator/DotsIndicator.class): major version 62 
+is newer than 61, the highest major version 
+supported by this compiler.
+  It is recommended that the compiler be upgraded.
+warning: C:\Users\User\.gradle\caches\8.13\transform
+s\46d39b8d54ac7236984e2139aebcba17\transformed\dotsi
+ndicator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdo
+tsindicator/BaseDotsIndicator.class): major version 
+62 is newer than 61, the highest major version 
+supported by this compiler.
+  It is recommended that the compiler be upgraded.
+C:\Users\User\AndroidStudioProjects\Shofyra\app\src\
+main\java\com\shofyra\ui\product\ProductDetailActivi
+ty.java:104: error: cannot find symbol
+            binding.tv_stock.setTextColor(getColor(R
+.color.error));
+                   ^
+  symbol:   variable tv_stock
+  location: variable binding of type 
+ActivityProductDetailBinding
+C:\Users\User\AndroidStudioProjects\Shofyra\app\src\
+main\java\com\shofyra\ui\product\ProductDetailActivi
+ty.java:111: error: cannot find symbol
+            binding.tv_stock.setTextColor(getColor(R
+.color.text_secondary));
+                   ^
+  symbol:   variable tv_stock
+  location: variable binding of type 
+ActivityProductDetailBinding
+Note: Some input files use or override a deprecated 
+API.
+Note: Recompile with -Xlint:deprecation for details.
+2 errors
+4 warnings
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/User/AndroidStudioProjects/Shofyra/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task 
+':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  warning: C:\Users\User\.gradle\caches\8.13\transfo
+rms\46d39b8d54ac7236984e2139aebcba17\transformed\dot
+sindicator-5.0-debug-api.jar(/com/tbuonomo/viewpager
+dotsindicator/DotsIndicator.class): major version 
+62 is newer than 61, the highest major version 
+supported by this compiler.
+    It is recommended that the compiler be upgraded.
+  warning: C:\Users\User\.gradle\caches\8.13\transfo
+rms\46d39b8d54ac7236984e2139aebcba17\transformed\dot
+sindicator-5.0-debug-api.jar(/com/tbuonomo/viewpager
+dotsindicator/BaseDotsIndicator.class): major 
+version 62 is newer than 61, the highest major 
+version supported by this compiler.
+    It is recommended that the compiler be upgraded.
+  C:\Users\User\AndroidStudioProjects\Shofyra\app\sr
+c\main\java\com\shofyra\ui\product\ProductDetailActi
+vity.java:104: error: cannot find symbol
+              binding.tv_stock.setTextColor(getColor
+(R.color.error));
+                     ^
+    symbol:   variable tv_stock
+    location: variable binding of type 
+ActivityProductDetailBinding
+  C:\Users\User\AndroidStudioProjects\Shofyra\app\sr
+c\main\java\com\shofyra\ui\product\ProductDetailActi
+vity.java:111: error: cannot find symbol
+              binding.tv_stock.setTextColor(getColor
+(R.color.text_secondary));
+                     ^
+    symbol:   variable tv_stock
+    location: variable binding of type 
+ActivityProductDetailBinding
+  Note: Some input files use or override a 
+deprecated API.
+  Note: Recompile with -Xlint:deprecation for 
+details.
+  2 errors
+  4 warnings
+
+* Try:
+> Check your code and dependencies to fix the 
+compilation error(s)
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 24s
+28 actionable tasks: 10 executed, 18 up-to-date

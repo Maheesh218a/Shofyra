@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/category_item_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginEnd="16dp">
+
+    <!-- Icon Background -->
+    <FrameLayout
+        android:layout_width="@dimen/category_icon_bg_size"
+        android:layout_height="@dimen/category_icon_bg_size"
+        android:background="@drawable/bg_category_icon">
+
+        <ImageView
+            android:id="@+id/iv_category_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:contentDescription="Category Icon"
+            app:tint="@color/brand_primary"
+            xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+    </FrameLayout>
+
+    <!-- Category Name -->
+    <TextView
+        android:id="@+id/tv_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/text_primary"
+        android:textSize="11sp"
+        android:lineSpacingExtra="1dp" />
+
+</LinearLayout>

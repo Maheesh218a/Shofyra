@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Allow visibility to Google Play Services to prevent SecurityException on Android 11+ (API 30+) -->
+    <queries>
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.google.android.gsf" />
+    </queries>
+
+    <!-- ═══ PERMISSIONS ═══ -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:name=".ShofyraApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shofyra"
+        tools:targetApi="34">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY_HERE" />
+
+        <activity android:name=".ui.SplashActivity" android:exported="true"
+            android:screenOrientation="portrait" android:theme="@style/Theme.Shofyra.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" android:exported="false"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.auth.LoginActivity" android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.auth.RegisterActivity" android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.product.ProductDetailActivity" android:exported="false"
+            android:screenOrientation="portrait" android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.cart.CartActivity" android:exported="false"
+            android:screenOrientation="portrait" android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.checkout.CheckoutActivity" android:exported="false"
+            android:screenOrientation="portrait" android:parentActivityName=".ui.cart.CartActivity" />
+        <activity android:name=".ui.order.ReceiptActivity" android:exported="false"
+            android:screenOrientation="portrait" android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.MapsActivity" android:exported="false"
+            android:screenOrientation="portrait" android:parentActivityName=".ui.MainActivity" />
+        <activity android:name=".ui.profile.EditProfileActivity" android:exported="false"
+            android:screenOrientation="portrait" android:parentActivityName=".ui.MainActivity" />
+
+        <service android:name=".ui.OrderSyncService" android:exported="false"
+            android:foregroundServiceType="dataSync" />
+        <service android:name=".ui.ShofyraMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".receivers.NetworkChangeReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

@@ -1,0 +1,145 @@
+﻿To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+./gradlew : warning: C:\Users\User\.gradle\caches\8.13
+\transforms\46d39b8d54ac7236984e2139aebcba17\transform
+ed\dotsindicator-5.0-debug-api.jar(/com/tbuonomo/viewp
+agerdotsindicator/DotsIndicator.class): major version 
+62 is newer than 61, the highest major version 
+supported by this compiler.
+At line:1 char:1
++ ./gradlew compileDebugJavaWithJavac --no-daemon 
+2>&1 | Out-File -File ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: 
+    C:\Use... this compiler.:String) [], RemoteExcep  
+  tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  It is recommended that the compiler be upgraded.
+warning: C:\Users\User\.gradle\caches\8.13\transforms\
+46d39b8d54ac7236984e2139aebcba17\transformed\dotsindic
+ator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdotsindi
+cator/DotsIndicator.class): major version 62 is newer 
+than 61, the highest major version supported by this 
+compiler.
+  It is recommended that the compiler be upgraded.
+warning: C:\Users\User\.gradle\caches\8.13\transforms\
+46d39b8d54ac7236984e2139aebcba17\transformed\dotsindic
+ator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdotsindi
+cator/DotsIndicator.class): major version 62 is newer 
+than 61, the highest major version supported by this 
+compiler.
+  It is recommended that the compiler be upgraded.
+warning: C:\Users\User\.gradle\caches\8.13\transforms\
+46d39b8d54ac7236984e2139aebcba17\transformed\dotsindic
+ator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdotsindi
+cator/BaseDotsIndicator.class): major version 62 is 
+newer than 61, the highest major version supported by 
+this compiler.
+  It is recommended that the compiler be upgraded.
+C:\Users\User\AndroidStudioProjects\Shofyra\app\src\ma
+in\java\com\shofyra\ui\product\ProductDetailActivity.j
+ava:104: error: cannot find symbol
+            binding.tv_stock.setTextColor(getColor(R.c
+olor.error));
+                   ^
+  symbol:   variable tv_stock
+  location: variable binding of type 
+ActivityProductDetailBinding
+C:\Users\User\AndroidStudioProjects\Shofyra\app\src\ma
+in\java\com\shofyra\ui\product\ProductDetailActivity.j
+ava:111: error: cannot find symbol
+            binding.tv_stock.setTextColor(getColor(R.c
+olor.text_secondary));
+                   ^
+  symbol:   variable tv_stock
+  location: variable binding of type 
+ActivityProductDetailBinding
+Note: Some input files use or override a deprecated 
+API.
+Note: Recompile with -Xlint:deprecation for details.
+2 errors
+4 warnings
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/User/AndroidStudioProjects/Shofyra/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task 
+':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  warning: C:\Users\User\.gradle\caches\8.13\transform
+s\46d39b8d54ac7236984e2139aebcba17\transformed\dotsind
+icator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdotsin
+dicator/DotsIndicator.class): major version 62 is 
+newer than 61, the highest major version supported by 
+this compiler.
+    It is recommended that the compiler be upgraded.
+  warning: C:\Users\User\.gradle\caches\8.13\transform
+s\46d39b8d54ac7236984e2139aebcba17\transformed\dotsind
+icator-5.0-debug-api.jar(/com/tbuonomo/viewpagerdotsin
+dicator/BaseDotsIndicator.class): major version 62 is 
+newer than 61, the highest major version supported by 
+this compiler.
+    It is recommended that the compiler be upgraded.
+  C:\Users\User\AndroidStudioProjects\Shofyra\app\src\
+main\java\com\shofyra\ui\product\ProductDetailActivity
+.java:104: error: cannot find symbol
+              binding.tv_stock.setTextColor(getColor(R
+.color.error));
+                     ^
+    symbol:   variable tv_stock
+    location: variable binding of type 
+ActivityProductDetailBinding
+  C:\Users\User\AndroidStudioProjects\Shofyra\app\src\
+main\java\com\shofyra\ui\product\ProductDetailActivity
+.java:111: error: cannot find symbol
+              binding.tv_stock.setTextColor(getColor(R
+.color.text_secondary));
+                     ^
+    symbol:   variable tv_stock
+    location: variable binding of type 
+ActivityProductDetailBinding
+  Note: Some input files use or override a deprecated 
+API.
+  Note: Recompile with -Xlint:deprecation for details.
+  2 errors
+  4 warnings
+
+* Try:
+> Check your code and dependencies to fix the 
+compilation error(s)
+
+> Run with --scan to get full insights.
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+17 actionable tasks: 1 executed, 16 up-to-date
+
+BUILD FAILED in 16s

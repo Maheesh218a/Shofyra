@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <!-- ID matches bottom nav: nav_home -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.shofyra.ui.home.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Search (not a bottom nav item, reachable via action) -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.shofyra.ui.home.SearchFragment"
+        android:label="Search">
+    </fragment>
+
+    <!-- ID matches bottom nav: nav_categories -->
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.shofyra.ui.home.CategoriesFragment"
+        android:label="Categories">
+    </fragment>
+
+    <!-- ID matches bottom nav: nav_orders -->
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.shofyra.ui.order.OrdersFragment"
+        android:label="My Orders">
+    </fragment>
+
+    <!-- ID matches bottom nav: nav_profile -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.shofyra.ui.home.ProfileFragment"
+        android:label="Profile">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Common group (Always visible) -->
+    <group android:id="@+id/group_common" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+    </group>
+
+    <!-- Authenticated group (Only visible when logged in) -->
+    <group android:id="@+id/group_authenticated" android:checkableBehavior="single" android:visible="false">
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_cart"
+            android:title="Cart" />
+        <item
+            android:id="@+id/nav_watchlist"
+            android:icon="@drawable/ic_heart_outline"
+            android:title="Watchlist" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_orders"
+            android:title="My Orders" />
+    </group>
+
+    <!-- Guest / Auth actions -->
+    <group android:id="@+id/group_guest" android:visible="true">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_profile"
+            android:title="Login" />
+    </group>
+
+    <group android:id="@+id/group_actions">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Sign Out"
+            android:visible="false" />
+    </group>
+
+</menu>

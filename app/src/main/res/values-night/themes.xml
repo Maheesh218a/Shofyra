@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    DARK MODE THEME OVERRIDES
+    These override themes.xml when device is in dark mode.
+    Material3 DayNight does most of this automatically,
+    but we override specific items for perfect Shofyra dark look.
+-->
+<resources>
+    <style name="Theme.Shofyra" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+
+        <!-- Dark mode: dark status bar -->
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/nav_background</item>
+        <item name="android:windowBackground">@color/background</item>
+
+        <item name="elevationOverlayEnabled">true</item>
+
+        <!-- Reuse same widget styles - they pick up dark colors automatically -->
+        <item name="materialButtonStyle">@style/Widget.Shofyra.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Shofyra.Button.Outlined</item>
+        <item name="bottomNavigationStyle">@style/Widget.Shofyra.BottomNavigation</item>
+        <item name="cardViewStyle">@style/Widget.Shofyra.CardView</item>
+        <item name="toolbarStyle">@style/Widget.Shofyra.Toolbar</item>
+    </style>
+</resources>
